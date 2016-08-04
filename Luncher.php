@@ -843,7 +843,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }
 
 
-define('WEBHOOK_URL', 'http://logan1062-morphin.rhcloud.com/luncher.php');
+define('WEBHOOK_URL', 'http://logan1062-morphin.rhcloud.com/');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
