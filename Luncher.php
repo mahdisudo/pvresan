@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '231759372:AAGfdd97Jqbmk0-aJweOzN1zX5Cgt8Z34Xs');
+define('BOT_TOKEN', '244274721:AAFY3hVSLx3DwrK9FwoqJto7iGVcEbwE9fs');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = 24709501;
+  $admin = 259521640;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
@@ -843,7 +843,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }
 
 
-define('WEBHOOK_URL', 'https://my-site.example.com/secret-path-for-webhooks/');
+define('WEBHOOK_URL', 'http://logan1062-morphin.rhcloud.com/luncher.php');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
